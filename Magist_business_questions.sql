@@ -1,6 +1,8 @@
 
-### Exploring the Magist dataset ###
+### Answering business questions related to the Magist dataset ###
 
+
+-- The schema of the Magist database is called 'magist'
 use magist;
 
 
@@ -444,16 +446,7 @@ ORDER BY delivery_delay ASC;
 -- How does the average revenue of Magist tech sellers compare to the average revenue of Eniac?
 -- Eniac's revenue was €14 M between April 2017 to March 2018 (1 year).
 
--- How does the average monthly revenue of Magist tech sellers compare to the average monthly revenue of Eniac?
--- Eniac's average monthly revenue was €1.17 M between April 2017 to March 2018 (1 year).
 
--- How do average order prices and average item prices of Magist tech sellers compare to the ones of of Eniac?
--- Eniac's average order and item prices are 710.-€ and 540, respectively (between April 2017 to March 2018).
-
-
-
-
--- How does the average revenue of Magist tech sellers compare to the average revenue of Eniac?
 -- Therefore, let's first make a table that contains only the latest year of data.
 CREATE TEMPORARY TABLE orders_2017_2018 AS
 SELECT 
@@ -500,5 +493,5 @@ WHERE
             tp.product_id
         FROM
             tech_products tp);
--- €3,5 M
+-- Yearly income of tech sellers: €3,5 M
 

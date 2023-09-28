@@ -1,6 +1,8 @@
 
 ### Exploring the Magist dataset ###
 
+
+-- The schema of the Magist database is called 'magist'
 use magist;
 
 
